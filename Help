@@ -1,0 +1,115 @@
+#include <stdio.h>
+
+int main(void) {
+    char str[] = "IMPR";
+    char c = 'C';
+    int i = 0;
+    while ((c = str[++i])) {
+        printf("%c,", c);
+    }
+    return 0;
+} // Denne funktion udskriver "MPR" på grund af ++i, hvilket betyder man starter fra 1 i stedet for 0 (i++)
+
+// Spørgsmål 1
+// Kode:
+int a = 5, b = 10;
+int c = a++ + --b;
+printf("%d %d %d\n", a, b, c);
+// Forklaring:
+// a++ evalueres som 5 og inkrementeres derefter til 6.
+// --b evalueres som 9.
+// c bliver summen: 5 + 9 = 15.
+// Output: 6 9 15
+
+// Spørgsmål 2
+// Kode:
+int arr[] = {10, 20, 30, 40};
+int i = 2;
+printf("%d %d\n", arr[i], i[arr]);
+// Forklaring:
+// arr[i] og i[arr] er ækvivalente i C.
+// Begge refererer til værdien på indeks 2: 30.
+// Output: 30 30
+
+// Spørgsmål 3
+// Kode:
+char str[] = "HELLO";
+char *p = str;
+printf("%c %c\n", *(p + 2), *(str + 4));
+// Forklaring:
+// *(p + 2) peger på 'L' (tegn på indeks 2).
+// *(str + 4) peger på 'O' (tegn på indeks 4).
+// Output: L O
+
+// Spørgsmål 4
+// Kode:
+int a = 1;
+int b = a++ + a++ + a++;
+printf("%d %d\n", a, b);
+// Forklaring:
+// Første a++: 1, anden a++: 2, tredje a++: 3.
+// Summen bliver: 1 + 2 + 3 = 6.
+// Efterfølgende værdi af a bliver 4.
+// Output: 4 6
+
+// Spørgsmål 5
+// Kode:
+int x = 15, y = 4;
+int z = x / y;
+int w = x % y;
+printf("%d %d\n", z, w);
+// Forklaring:
+// x / y (15 / 4) giver heltalsdivisionen 3.
+// x % y (15 % 4) giver resten 3.
+// Output: 3 3
+
+// Spørgsmål 6
+// Kode:
+char ch = 'G';
+printf("%c %d\n", ch + 2, ch + 2);
+// Forklaring:
+// 'G' + 2 giver 'I' (ASCII 73).
+// Decimalværdien af 'I' er 73.
+// Output: I 73
+
+// Spørgsmål 7
+// Kode:
+int i = 5, j = 10;
+if (i > j ? i : j) {
+    printf("True\n");
+} else {
+    printf("False\n");
+}
+// Forklaring:
+// Udtrykket (i > j ? i : j) evalueres til j (10).
+// Da 10 er sandt i C, udskrives "True".
+// Output: True
+
+// Spørgsmål 8
+// Kode:
+int arr[3] = {1, 2, 3};
+printf("%d\n", 2[arr]);
+// Forklaring:
+// 2[arr] er ækvivalent med arr[2].
+// Værdien på indeks 2 er 3.
+// Output: 3
+
+// Spørgsmål 9
+// Kode:
+int a = 10, b = 20, c = 30;
+c = a > b ? a : b > c ? b : c;
+printf("%d\n", c);
+// Forklaring:
+// Første betingelse: a > b er falsk, så a ignoreres.
+// Anden betingelse: b > c er falsk, så værdien af c forbliver 30.
+// Output: 30
+
+// Spørgsmål 10
+// Kode:
+int x = 1, y = 2, z = 3;
+printf("%d\n", x && y || z);
+// Forklaring:
+// x && y evalueres til sandt (1).
+// 1 || z evalueres også til sandt (1).
+// Output: 1
+
