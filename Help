@@ -173,4 +173,109 @@ printf("%d\n", x && y || z);
 // 122       z
 
 
+// Spørgsmål 11
+// Kode:
+int a = 3, b = 4, c = 5;
+int result = (a < b && b < c) ? a + b + c : 0;
+printf("%d\n", result);
+// Forklaring:
+// a < b og b < c er begge sande, så a + b + c evalueres til 12.
+// Output: 12
+
+// Spørgsmål 12
+// Kode:
+char str1[] = "Hello, ";
+char str2[] = "World!";
+printf("%s%s\n", str1, str2);
+// Forklaring:
+// str1 og str2 sættes sammen og udskrives som "Hello, World!".
+// Output: Hello, World!
+
+// Spørgsmål 13
+// Kode:
+int nums[] = {1, 2, 3, 4, 5};
+printf("%d %d\n", *(nums + 1), nums[3]);
+// Forklaring:
+// *(nums + 1) refererer til 2 (indeks 1).
+// nums[3] refererer til 4 (indeks 3).
+// Output: 2 4
+
+// Spørgsmål 14
+// Kode:
+int x = 10;
+int y = x-- - --x;
+printf("%d %d\n", x, y);
+// Forklaring:
+// x-- evalueres som 10 og derefter decrements til 9.
+// --x gør x til 8 før evaluering.
+// y bliver 10 - 8 = 2.
+// Efterfølgende værdi af x er 8.
+// Output: 8 2
+
+// Spørgsmål 15
+// Kode:
+float a = 5.0, b = 2.0;
+float result = a / b;
+printf("%.2f\n", result);
+// Forklaring:
+// Divisionen 5.0 / 2.0 giver 2.50.
+// Output: 2.50
+
+// Spørgsmål 16
+// Kode:
+char ch = 'Z';
+printf("%d %c\n", ch, ch - 1);
+// Forklaring:
+// 'Z' har ASCII-værdien 90.
+// ch - 1 giver 'Y' (ASCII 89).
+// Output: 90 Y
+
+// Spørgsmål 17
+// Kode:
+int a = 1;
+int b = 0;
+int result = a || b && !a;
+printf("%d\n", result);
+// Forklaring:
+// !a evalueres som 0.
+// b && 0 giver 0.
+// a || 0 giver 1.
+// Output: 1
+
+// Spørgsmål 18
+// Kode:
+int arr[] = {10, 20, 30};
+int *ptr = arr;
+printf("%d\n", *(ptr + 2));
+// Forklaring:
+// *(ptr + 2) peger på elementet på indeks 2 i arrayet: 30.
+// Output: 30
+
+// Spørgsmål 19
+// Kode:
+int x = 7;
+int result = (x >> 1) + (x << 1);
+printf("%d\n", result);
+// Forklaring:
+// x >> 1 (7 højreforskudt med 1) er 3.
+// x << 1 (7 venstreforskudt med 1) er 14.
+// Summen er 3 + 14 = 17.
+// Output: 17
+
+// Spørgsmål 20
+// Kode:
+char str[] = "C programming";
+printf("%c\n", *(str + 2));
+// Forklaring:
+// *(str + 2) peger på tegnet på indeks 2: ' '.
+// Output: p
+
+
+
+
+
+
+
+d
+
 
