@@ -270,12 +270,111 @@ printf("%c\n", *(str + 2));
 // *(str + 2) peger på tegnet på indeks 2: ' '.
 // Output: p
 
+// Spørgsmål 21
+// Kode:
+int x = 5, y = 3;
+int result = (x | y) & ~(x & y);
+printf("%d\n", result);
+// Forklaring:
+// x | y er bitvis OR (5 | 3 = 7).
+// x & y er bitvis AND (5 & 3 = 1).
+// ~(x & y) er bitvis NOT (~1 = -2).
+// Resultatet er 7 & -2 = 6.
+// Output: 6
 
+// Spørgsmål 22
+// Kode:
+float f = 7.5;
+int i = (int)f;
+printf("%d\n", i);
+// Forklaring:
+// (int)f konverterer float-værdien 7.5 til et heltal, hvilket afrunder nedad til 7.
+// Output: 7
+
+// Spørgsmål 23
+// Kode:
+int arr[4] = {1, 2, 3, 4};
+int *ptr = arr + 1;
+printf("%d\n", *(ptr + 2));
+// Forklaring:
+// ptr peger på indeks 1 (2).
+// *(ptr + 2) refererer til indeks 3 (4).
+// Output: 4
+
+// Spørgsmål 24
+// Kode:
+int a = 8, b = 3;
+printf("%d\n", a % b);
+// Forklaring:
+// a % b beregner resten af heltalsdivisionen: 8 % 3 = 2.
+// Output: 2
+
+// Spørgsmål 25
+// Kode:
+char ch = 'A';
+printf("%c %d\n", ch + 5, ch + 5);
+// Forklaring:
+// 'A' + 5 giver 'F' (ASCII 70).
+// Decimalværdien af 'F' er 70.
+// Output: F 70
+
+// Spørgsmål 26
+// Kode:
+int a = 2, b = 4;
+int result = (a << 1) + (b >> 1);
+printf("%d\n", result);
+// Forklaring:
+// a << 1 forskyder 2 én plads til venstre: 4.
+// b >> 1 forskyder 4 én plads til højre: 2.
+// Resultatet er 4 + 2 = 6.
+// Output: 6
+
+// Spørgsmål 27
+// Kode:
+int x = 5, y = 0;
+printf("%d\n", x && y || !y);
+// Forklaring:
+// x && y evalueres til 0 (falsk).
+// !y evalueres til 1 (sand).
+// 0 || 1 evalueres til 1.
+// Output: 1
+
+// Spørgsmål 28
+// Kode:
+int arr[5] = {10, 20, 30, 40, 50};
+printf("%d\n", 3[arr]);
+// Forklaring:
+// 3[arr] er ækvivalent med arr[3].
+// Værdien på indeks 3 er 40.
+// Output: 40
+
+// Spørgsmål 29
+// Kode:
+int num = 12;
+printf("%d\n", num & 1);
+// Forklaring:
+// num & 1 kontrollerer, om det mindst signifikante bit er 1.
+// 12 & 1 er 0, så 12 er lige.
+// Output: 0
+
+// Spørgsmål 30
+// Kode:
+char str[] = "Exam time!";
+printf("%c\n", *(str + 5));
+// Forklaring:
+// *(str + 5) peger på tegnet på indeks 5: 't'.
+// Output: t
 
 
 
 
 
 d
+
+
+
+
+
+
 
 
